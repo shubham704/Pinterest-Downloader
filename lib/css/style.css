@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Pacifico&family=Shantell+Sans:ital,wght@1,600&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 400;
+  background: #fff;
+  overflow-x: hidden;
+  box-sizing: content-box;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  z-index: 9999;
+  float: left;
+  padding-bottom: 5px;
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 15%);
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: fixed;
+}
+#navbar a {
+  font-family: pacifico, cursive;
+  padding: 5px 0 0;
+  font-size: 25px;
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.button-52 a {
+  text-decoration: none;
+  color: #000;
+}
+#idi {
+  color: black;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+}
+#idj {
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 2.4rem;
+  color: #000;
+}
+input#url {
+  box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+}
+.form-control {
+  border: 1px solid #e7e7e7;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #0a2463;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #acb4c4;
+  appearance: none;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.button-52 {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 20px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px;
+  }
+}
+input[type="url"]:focus {
+  border: 1px solid #dc3545;
+}
+.heading-af,
+.error {
+  font-family: "Shantell Sans", cursive;
+}
+.bottom-line {
+  font-family: "Shantell Sans", cursive;
+  text-align: center;
+  display: none;
+}
+* {
+  margin: 0;
+}
+h1 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 50px;
+  text-align: center;
+  margin: 30px 0;
+}
+h2 {
+  font-family: "JetBrains Mono", monospace;
+}
+.accordion-wrapper {
+  margin: 0 50px;
+}
+.ring {
+  display: none;
+}
+.accordion {
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin: 10px 0 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+}
+.main-acc {
+  border: 3px solid black;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 6px 6px 6px 6px;
+  padding: 28px;
+}
+.main-acc.one {
+  background: #fe9687;
+}
+.main-acc.two {
+  background: #ffe587;
+}
+.main-acc.three {
+  background: #82b4fe;
+}
+.main-acc.four {
+  background: #a1db73;
+}
+.main-acc.five {
+  background: #f0afe9;
+}
+.main-acc.six {
+  background: #a0acea;
+}
+.main-acc.active {
+  border-top: 3px solid #000000;
+  border-right: 3px solid #000000;
+  border-left: 3px solid #000000;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+}
+.main-acc:hover {
+  background-color: #ccc;
+}
+.sub-acc {
+  background-color: white;
+  text-decoration: underline;
+  margin: 0;
+  padding: 18px 28px;
+}
+.accordion:after {
+  content: "\002B";
+  color: black;
+  font-weight: 700;
+  float: right;
+  margin-left: 5px;
+  font-size: 28px;
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  border: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.sub-panel {
+  border: none;
+}
+.sub-panel p {
+  padding: 0 18px;
+  margin: 10px 20px;
+  font-family: sans-serif;
+}
+.accordion.active {
+  border: 3px solid #000000;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.main-panel p {
+  padding: 0 18px;
+  margin: 10px 20px;
+  font-family: sans-serif;
+}
+.main-panel {
+  border: none;
+}
+@media only screen and (max-width: 400px) {
+  #idi {
+    font-size: 30px;
+  }
+  #idj {
+    font-size: 17px;
+  }
+  .direction h2 {
+    font-size: 21px;
+  }
+  #title {
+    font-size: 23px;
+  }
+  .info-di h2 {
+    font-size: 19px;
+  }
+  .accordion-wrapper h1 {
+    font-size: 30px;
+  }
+  .accordion-wrapper {
+    margin: 0 20px;
+  }
+  .button-52 {
+    font-size: 12.5px;
+  }
+}
